@@ -4,10 +4,15 @@ function handleOnInput(t, maxlen) {
     }
 }
 
-const button = document.querySelector('button')
-
-const buttonClickHandler = () => {
-    alert('Button clicked!');
-};
-
-button.onclick = buttonClickHandler;
+window.onload = () => {
+    const button = document.querySelector('button')
+    const input = document.querySelector('input')
+    const label = document.querySelector('label')
+    const buttonClickHandler = () => {
+        label.innerText = 2 * input.value
+        setTimeout(() => {
+            label.innerText = "Double!"
+        }, 2000)
+    }
+    button.onclick = buttonClickHandler
+}
