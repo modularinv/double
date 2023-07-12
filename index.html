@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <title>Double!</title>
   </head>
   <body>
     <div class="box">
       <div class="inside">
-        <h1>blabla</h1>
+        <label>Double!</label>
       </div>
-      <button class="calc-button">
+      <div class="input-container">
+        <input type="number" id="input-num" name="before" oninput="handleOnInput(this, 9)">
+      </div>
+      <button class="calc-button" id="calc">
         Calculate
       </button>
     </div>
